@@ -27,10 +27,12 @@ Usage: ./run.sh [options...]
 
 ```
 
-You could mention users in the message if you obtain the [user id](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-).
+You could mention users in the message if you obtain the [UserID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-).
 
 ```bash
-$ ./run.sh --url <webhook_url> --message "<@user id> hey I mentiond you."
+$ ./run.sh --url <webhook_url> --message "<@here>" # mention in channel
+$ ./run.sh --url <webhook_url> --message "<@UserID>" # mention users
+$ ./run.sh --url <webhook_url> --message "<@&RoleID>" # mention roles
 ```
 
 > You could modify this script if it is not suitable for your requirements. Please refer to the [official document](https://discord.com/developers/docs/resources/webhook#execute-webhook) to edit it.
