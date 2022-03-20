@@ -35,5 +35,8 @@ $ ./run.sh --url <webhook_url> --message "<@user id> hey I mentiond you."
 
 > You could modify this script if it is not suitable for your requirements. Please refer to the [official document](https://discord.com/developers/docs/resources/webhook#execute-webhook) to edit it.
 
+## Integrate into the schedule jobs
+In order to make a recurring reminder, we make a schedule to execute the script. I made two examples in the Example folder that will execute at 12PM every weekend. For Linux users, you could copy the content of cron into `/etc/crontab`. For macOS users, there is a `.plist` for you. You could place it in the `/Library/LaunchDaemons/` to execute by the system booting. Or place it in the `/Library/LaunchAgents/` to execute by user logging-in.
+
 ## Author
 * **Nick Yang** - [nick10811](https://github.com/nick10811)
