@@ -10,8 +10,6 @@
     <string>-u</string>
     <string>https://discord.com/api/webhooks/{webhook.id}/{webhook.token}</string>
   </array>
-  <key>KeepAlive</key>
-  <true/>
   <key>StartCalendarInterval</key>
   <array>
     <dict>
