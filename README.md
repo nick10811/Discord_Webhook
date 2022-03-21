@@ -14,6 +14,12 @@ Before executing this script, you need to get the [webhook URL](https://support.
 $ ./run.sh --url <webhook_url>
 ```
 
+### Execute bash script from URL
+
+```bash
+$ curl -s https://raw.githubusercontent.com/nick10811/Discord_Webhook/master/run.sh | bash -s -- -u <webhook_url>
+```
+
 This lists all command of the options.
 
 ```bash
