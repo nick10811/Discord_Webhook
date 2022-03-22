@@ -26,19 +26,24 @@ This lists all command of the options.
 $ ./run.sh --help
 Usage: ./run.sh [options...]
 -u, --url            The url of webhook (requirement)
---avatar             The url of avatar
 -t, --title          The title
--m, --message        The message
--h, --help           Get help for commands (requirement)
+-m, --message        The message (requirement)
+-h, --help           Get help for commands
+
+
+--username           The name of Bot
+--tag                For user mentions
+--avatar             The url of avatar
+--color              The integer of color, default is gold(15844367)
 
 ```
 
 You could mention users in the message if you obtain the [UserID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-).
 
 ```bash
-$ ./run.sh --url <webhook_url> --message "<@here>" # mention in channel
-$ ./run.sh --url <webhook_url> --message "<@UserID>" # mention users
-$ ./run.sh --url <webhook_url> --message "<@&RoleID>" # mention roles
+$ ./run.sh --url <webhook_url> --tag "<@here>" # mention in channel
+$ ./run.sh --url <webhook_url> --tag "<@UserID>" # mention users
+$ ./run.sh --url <webhook_url> --tag "<@&RoleID>" # mention roles
 ```
 
 > You could modify this script if it is not suitable for your requirements. Please refer to the [official document](https://discord.com/developers/docs/resources/webhook#execute-webhook) to edit it.
