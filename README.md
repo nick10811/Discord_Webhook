@@ -1,6 +1,6 @@
 # Discord_Webhook
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GitHub](https://img.shields.io/github/license/nick10811/Discord_Webhook)
 
 ## Description
 This is a webhook shell script for Discord only. The script was born since I wish a recurring reminder bot. But there are no suitable free bots after I survey on the internet. Hence, I have decided to write a simple webhook script and integrate it into the daemon on the OS.
